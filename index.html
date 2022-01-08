@@ -10,9 +10,13 @@
             font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             text-align: center;
         }
+        h1{
+            color: rgb(46, 80, 80);
+        }
 
         p{
             font-size: 20px;
+            color: rgb(63, 82, 61);
         }
 
         .center{
@@ -30,6 +34,7 @@
             font-size: 25px;
             font-weight: bold;
             padding: 5px;
+            color: rgb(46, 80, 80);
         }
 
         h2{
@@ -38,10 +43,11 @@
             font-size: 20px;
             padding: 5px;
             text-decoration: underline;
+            color: rgb(63, 82, 61);
         }
         a{
             text-decoration: none;
-            color: black;
+            color: rgb(46, 80, 80);
         }
         
         a:focus{
@@ -49,25 +55,158 @@
         }
         
         body{
-            background-color: rgb(188, 243, 234);
+            background-color: rgb(158, 197, 164);
+        }
+
+        ul{
+            list-style-type: square;
+            color:rgb(98, 100, 99);
+            font-size: 18px;
+            margin-left: 200px;
+            margin-right: 200px;
+        }
+        
+        table, th, td, tr{
+            border-color: rgb(63, 82, 61);
+            border: 2px;
+            border-style: solid;
+            color: rgb(46, 80, 80);
+        }
+        
+
+        div{
+            margin-right: 200px;
+            margin-left: 200px; 
+        }
+
+        .left{
+            padding: 10px;
+            text-align: left;
+            margin-right:15%;
+            margin-left: 15%;
+        }
+
+        input[type=email]{
+            width: 200px;
+        }
+
+        legend{
+           color: rgb(63, 82, 61);
+        }
+
+        fieldset{
+            color: rgb(46, 80, 80);
         }
         
     </style>
 </head>
 <body>
+    <div>
     <h1 id="Top">Brianna A. Clarke</h1>
-    <h2><a href="Bri's_Goal.html">Bri's Goals</a></h2>
+    <a href="Bri's_Goal.html"><h2>Bri's Goals</h2></a>
     <hr>
 
     <h3>About Bri</h3>
     <img src="Assets/At_Fountain.jpeg" alt="Main_Picture" class="center" >
     <br>
 
-    <p>My name is <b><u>Brianna Clarke</u></b>, I am currently a 1st year student at the <b>University of the West Indies</b>.
+    <p>My name is <b><u>Brianna Clarke</u></b>, I am currently a 1st year student at the <b><a href="https://en.wikipedia.org/wiki/University_of_the_West_Indies#/media/File:Coat_of_arms_of_the_University_of_the_West_Indies.png">University of the West Indies</a></b>.
         <br>
-        I am a <u>graduate</u> of the <b>Immaculate Conception High School.</b> for girls and I subsequently attended sixth form.
+        I am a <u>graduate</u> of the <b><a href="https://en.wikipedia.org/wiki/Immaculate_Conception_High_School_(Jamaica)#/media/File:Immaculate_Conception_High_School_emblem.png">Immaculate Conception High School</a></b> for girls and I subsequently attended sixth form.
         <br>
     </p>
+    <p>
+        <u><strong>Here are some of my favorite websites:</strong></u> <br><br>
+
+            <p class="left"><a href="https://www.outspokenheroes.com/" style="color: rgb(46, 80, 80); font-size: 20px;"><b>Out Spoken Heros</b></a></p>
+            <ul class="left">
+                <li>This is an interactive community for Christians, especially young Christians.</li>
+            </ul>
+           
+            <p class="left"><a href="https://www.blackgirlcurls.com/" style="color: rgb(46, 80, 80); font-size: 20px;"><b>Black Girl Curls</b></a></p>
+            <ul class="left">
+                <li>This is an informative website for naturalistas.</li>
+            </ul>
+
+            <p class="left"><a href="https://ysjournal.com/" style="color: rgb(46, 80, 80); font-size: 20px;"><b>YS Journal</b></a></p>
+            <ul class="left">
+                <li>This provides information on trending topics in the science community.</li>
+            </ul>
+        
+    </p>
+
+<br>
+
+    <table class="left" >
+        <caption><strong>My Favorite Books</strong></caption>
+        
+        <tr>
+            <th>Title</th>
+            <th>Author</th>
+        </tr>
+
+        <tr>
+            <td>Left Behind: A Novel of the Earth's Last Days</td>
+            <td>Jerry B. Jenkins and Tim LaHaye</td>
+        </tr>
+
+        <tr>
+            <td>The Skin Map</td>
+            <td>Stephen R. Lawhead</td>
+        </tr>
+
+        <tr>
+            <td>Hair Love</td>
+            <td>Matthew A. Cherry</td>
+        </tr>
+
+        <tr>
+            <td>Woman Evolve: Break Up with Your Fears and Revolutionize Your Life</td>
+            <td>Sarah Jakes Roberts</td>
+        </tr>
+
+        <tr>
+            <td>Relationship Goals Challenge: Thirty Days from Good to Great</td>
+            <td>Michael Todd</td>
+        </tr>
+    </table>
+<br><br>
+    <form action="" >
+       <fieldset>
+        <legend>Interactive Section</legend>
+        <br>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="JaneDoe@gmail.com"> <br><br>
+
+        <label for="dob">Birth Month:</label>
+        <select name="dob" id="dob" style="color:rgb(98, 100, 99);">
+            <option value="select">Select Month</option>
+            <option value="january">January</option>
+            <option value="february">February</option>
+            <option value="march">March</option>
+            <option value="april">April</option>
+            <option value="may">May</option>
+            <option value="june">June</option>
+            <option value="july">July</option>
+            <option value="august">August</option>
+            <option value="september">Septemebr</option>
+            <option value="october">October</option>
+            <option value="novemeber">Novemeber</option>
+            <option value="December">Decemeber</option>
+        </select> <br> <br>
+        
+        <label for="help">Was this website informative?</label>
+        <input type="radio" id="yes"name="help" value="Yes">Yes
+        <input type="radio" id="no" name="help" value="No">No
+        <br><br>
+
+        <label for="feedback"> Any Feedback:</label><br>
+        <textarea name="feedback" id="feedback" cols="40" rows="10" ></textarea> <br>
+
+
+       </fieldset>
+    </form>
 
     <footer>
         <hr>
@@ -75,5 +214,6 @@
        <br>
       &copy; 
     </footer>
+</div>
 </body>
 </html>
